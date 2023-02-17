@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      section {
+        max-width: 800px;
+        margin: 0 auto;
+        text-align: center;
+      }
+
+      ul {
+        list-style: none;
+        display: flex;
+        justify-content: space-around;
+      }
+
+      section ul li {
+        margin: 0 0.5rem;
+      }
+
+      a {
+        transition: all 0.4s ease;
+        text-decoration: none;
+        color: whitesmoke;
+        background-color: #111;
+        border: 2px solid #222;
+        border-radius: 4px;
+        transition: all 0.3s o;
+        padding: 12px 32px;
+        cursor: pointer;
+      }
+
+      a:hover {
+        transition: all 0.4s ease;
+        color: rgba(var(--text-color));
+        border: 2px double transparent;
+        background-image: linear-gradient(rgb(13, 14, 33), rgb(13, 14, 33)),
+          radial-gradient(
+            circle at left top,
+            rgb(1, 110, 218),
+            rgb(217, 0, 192)
+          );
+        background-origin: border-box;
+        background-clip: padding-box, border-box;
+      }
+      section li a {
+        display: flex;
+        align-items: center;
+        transition: background-color 1s;
+      }
+
+      section li a:hover {
+        background-color: #333;
+      }
+      section li a img {
+        margin-right: 10px;
+      }
+      section ul li a {
+        transition: transform 0.3s;
+      }
+
+      section ul li a:hover {
+        transform: scale(1.1);
+      }
+
+      section ul li a:active {
+        transform: scale(0.9);
+      }
+
+      section ul li a:focus {
+        outline: none;
+      }
+
+      section ul li a:not(:hover) {
+        transform: scale(1);
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <h1>X.Site</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section>
+        <h2>Contact Us</h2>
+        <p>
+          Please feel free to contact us with any questions or comments you may
+          have.
+        </p>
+        <br />
+        <br />
+        <ul>
+          <li>
+            <a
+              href="https://www.facebook.com/ImaginaryfriendNDplasticfriend/"
+              target="_blank"
+            >
+              <img src="./facebook.png" alt="Facebook" width="30" height="30" />
+              Facebook
+            </a>
+          </li>
+          <li>
+            <a href="https://discord.gg/29QFQxJtEw" target="_blank">
+              <img src="./discord.png" alt="Discord" width="30" height="30" />
+              Discord
+            </a>
+          </li>
+        </ul>
+      </section>
+    </main>
+    <footer>
+      <p>&copy; 2021 My Company</p>
+    </footer>
+  </body>
+</html>
